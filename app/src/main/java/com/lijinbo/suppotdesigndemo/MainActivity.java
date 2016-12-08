@@ -15,7 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener ,View.OnClickListener{
 
     private DrawerLayout mDrawerLayout; //抽屉布局
     private MenuItem currentSelectedMenu; //当前选中的 导航menu
@@ -101,12 +101,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
+        switch (view.getId()){
             case R.id.floating_action_button:
-                Snackbar.make(mCoordinatorLayout, "哈哈哈哈", Snackbar.LENGTH_INDEFINITE).setAction("点击关闭", new View.OnClickListener() {
+                Snackbar.make(mCoordinatorLayout, "哈哈哈", Snackbar.LENGTH_INDEFINITE).setAction("点击关闭", new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(MainActivity.this, "哈哈哈哈", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "哈哈哈", Toast.LENGTH_SHORT).show();
                     }
                 }).show();
                 break;
