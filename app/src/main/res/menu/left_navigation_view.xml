@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/g1_m1"
+            android:checkable="true"
+            android:checked="true"
+            android:icon="@drawable/selector_icon1"
+            android:title="主页"/>
+        <item
+            android:id="@+id/g1_m2"
+            android:checkable="true"
+            android:icon="@drawable/selector_icon2"
+            android:title="发动态"/>
+        <item
+            android:id="@+id/g1_m3"
+            android:checkable="true"
+            android:icon="@drawable/selector_icon3"
+            android:title="拍照"/>
+        <item
+            android:id="@+id/g1_m4"
+            android:checkable="true"
+            android:icon="@drawable/selector_icon4"
+            android:title="定位"/>
+
+    </group>
+
+    <item android:title="设置">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/selector_icon5"
+                android:title="注销"
+                />
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/selector_icon6"
+                android:title="退出"
+                />
+
+        </menu>
+
+    </item>
+
+
+</menu>
